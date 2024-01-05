@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+    background-color: lightcyan;
+}
+h1{
+    margin-left: 5%;
+    color:maroon;
+}
+.post{
+    height: 200px;
+    width: 500px;
+    background-color:white;
+    margin-left: 35%;
+    
+    border:1px solid burlywood;
+}
+.username{
+font-style: initial;
+color: maroon;
+
+}
+.same{
+   
+  background: maroon;
+  font-weight: 700;
+  color: white;
+
+}
+.new{
+    margin-left: 5%;
+    background-color: chocolate;
+}

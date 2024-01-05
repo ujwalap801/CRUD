@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+h2{
+    color: brown;
+}
+.user{
+    font-weight: 700;
+    
+}
+.id{
+    color: chocolate;
+    font-weight:800;
+}
+textarea{
+    border: 3px solid black;
+    margin-left: 5%;
+}
+button{
+    background-color: aqua;
+}

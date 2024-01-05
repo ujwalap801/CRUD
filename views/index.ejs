@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Quora posts</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1> Quora post</h1>
+ <% for(post of posts) {%>
+    <div class="post">
+    <h3 class="username"> @<%=post.username %></h3>
+    <h4 class="content" ><%=post.content %> </h4>
+   <p class="non"><a href="http://localhost:8080/posts/<%=post.id %>" ><button class="same" id="see">See in detail</button> </a></p>
+    <p class="non"><a href="http://localhost:8080/posts/<%=post.id %>/edit" ><button class="same" id="edit">Edit</button></a></p>
+<form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+   <p class="non"> <button class="same">Delete Post</button></p> 
+</form>  
+</div>
+    <% } %>
+</br>
+
+</br>
+</br>
+<a href="http://localhost:8080/posts/new" ><button class="new">Create a New post</button> </a>
+    
+</body>
+</html>
